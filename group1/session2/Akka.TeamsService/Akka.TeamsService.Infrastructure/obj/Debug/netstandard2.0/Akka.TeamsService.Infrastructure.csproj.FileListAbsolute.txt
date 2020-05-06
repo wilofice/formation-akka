@@ -1,0 +1,11 @@
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Infrastructure\bin\Debug\netstandard2.0\Akka.TeamsService.Infrastructure.deps.json
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Infrastructure\bin\Debug\netstandard2.0\Akka.TeamsService.Infrastructure.dll
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Infrastructure\bin\Debug\netstandard2.0\Akka.TeamsService.Infrastructure.pdb
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Infrastructure\bin\Debug\netstandard2.0\Akka.TeamsService.Domain.dll
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Infrastructure\bin\Debug\netstandard2.0\Akka.TeamsService.Domain.pdb
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Infrastructure\obj\Debug\netstandard2.0\Akka.TeamsService.Infrastructure.csprojAssemblyReference.cache
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Infrastructure\obj\Debug\netstandard2.0\Akka.TeamsService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Infrastructure\obj\Debug\netstandard2.0\Akka.TeamsService.Infrastructure.AssemblyInfo.cs
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Infrastructure\obj\Debug\netstandard2.0\Akka.TeamsService.Infrastructure.csproj.CopyComplete
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Infrastructure\obj\Debug\netstandard2.0\Akka.TeamsService.Infrastructure.dll
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Infrastructure\obj\Debug\netstandard2.0\Akka.TeamsService.Infrastructure.pdb
