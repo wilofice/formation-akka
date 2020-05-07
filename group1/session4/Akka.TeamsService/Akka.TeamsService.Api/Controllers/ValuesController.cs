@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Akka.TeamsService.Domain.TeamsAggregate.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Akka.TeamsService.Api.Controllers
@@ -10,11 +11,19 @@ namespace Akka.TeamsService.Api.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private ITeamsReadRepository _teamsRepository;
+
+        public ValuesController(ITeamsReadRepository teamsRepository)
+        {
+            _teamsRepository = teamsRepository;
+
+        }
+
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(_teamsRepository.GetHashCode());
         }
 
         // GET api/values/5

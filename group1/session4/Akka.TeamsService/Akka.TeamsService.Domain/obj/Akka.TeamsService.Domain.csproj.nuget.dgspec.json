@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dell\\source\\training\\Akka.TeamsService\\Akka.TeamsService.Domain\\Akka.TeamsService.Domain.csproj": {}
+    "C:\\Users\\dell\\Desktop\\akka-formation-repo\\formation-akka\\group1\\session4\\Akka.TeamsService\\Akka.TeamsService.Domain\\Akka.TeamsService.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dell\\source\\training\\Akka.TeamsService\\Akka.TeamsService.Domain\\Akka.TeamsService.Domain.csproj": {
+    "C:\\Users\\dell\\Desktop\\akka-formation-repo\\formation-akka\\group1\\session4\\Akka.TeamsService\\Akka.TeamsService.Domain\\Akka.TeamsService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell\\source\\training\\Akka.TeamsService\\Akka.TeamsService.Domain\\Akka.TeamsService.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\Desktop\\akka-formation-repo\\formation-akka\\group1\\session4\\Akka.TeamsService\\Akka.TeamsService.Domain\\Akka.TeamsService.Domain.csproj",
         "projectName": "Akka.TeamsService.Domain",
-        "projectPath": "C:\\Users\\dell\\source\\training\\Akka.TeamsService\\Akka.TeamsService.Domain\\Akka.TeamsService.Domain.csproj",
+        "projectPath": "C:\\Users\\dell\\Desktop\\akka-formation-repo\\formation-akka\\group1\\session4\\Akka.TeamsService\\Akka.TeamsService.Domain\\Akka.TeamsService.Domain.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell\\source\\training\\Akka.TeamsService\\Akka.TeamsService.Domain\\obj\\",
+        "outputPath": "C:\\Users\\dell\\Desktop\\akka-formation-repo\\formation-akka\\group1\\session4\\Akka.TeamsService\\Akka.TeamsService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

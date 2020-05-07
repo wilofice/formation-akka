@@ -34,7 +34,7 @@ namespace Akka.TeamsService.Api
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Akka.TeamsService API", Version = "v1" });
             });
 
-            services.AddTransient<ITeamsReadRepository, TeamsRepository>();
+            services.AddSingleton<ITeamsReadRepository, TeamsRepository>();
             //services.AddSingleton();
             //services.AddScoped();
 

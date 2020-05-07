@@ -6,9 +6,11 @@ using Akka.TeamsService.Domain.TeamsAggregate.Abstractions;
 using Akka.TeamsService.Domain.TeamsAggregate.Models;
 using Akka.TeamsService.Infrastructure.TeamsAggregate.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Abstractions;
 
 namespace Akka.TeamsService.Api.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
     public class TeamsController : Controller
     {
@@ -20,10 +22,15 @@ namespace Akka.TeamsService.Api.Controllers
         }
         
         [HttpGet]
-        [Route("/api/teams")]
-        public IActionResult GetAllTeams()
+        public ActionResult<IEnumerable<Team>> GetAllTeams()
         {
             return Ok(_teamsRepository.GetAllTeams());
+        }
+
+        [HttpGet("hashcode")]
+        public IActionResult GetHashcode()
+        {
+            return Ok(new { value = _teamsRepository.GetHashCode() });
         }
     }
 }

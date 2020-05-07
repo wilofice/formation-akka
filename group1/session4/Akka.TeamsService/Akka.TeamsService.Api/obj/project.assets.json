@@ -12813,6 +12813,7 @@
       "Akka.TeamsService.Domain >= 1.0.0",
       "Akka.TeamsService.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
+      "Microsoft.AspNetCore.Mvc.Abstractions >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
@@ -12826,11 +12827,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dell\\source\\training\\Akka.TeamsService\\Akka.TeamsService.Api\\Akka.TeamsService.Api.csproj",
+      "projectUniqueName": "C:\\Users\\dell\\Desktop\\akka-formation-repo\\formation-akka\\group1\\session4\\Akka.TeamsService\\Akka.TeamsService.Api\\Akka.TeamsService.Api.csproj",
       "projectName": "Akka.TeamsService.Api",
-      "projectPath": "C:\\Users\\dell\\source\\training\\Akka.TeamsService\\Akka.TeamsService.Api\\Akka.TeamsService.Api.csproj",
+      "projectPath": "C:\\Users\\dell\\Desktop\\akka-formation-repo\\formation-akka\\group1\\session4\\Akka.TeamsService\\Akka.TeamsService.Api\\Akka.TeamsService.Api.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dell\\source\\training\\Akka.TeamsService\\Akka.TeamsService.Api\\obj\\",
+      "outputPath": "C:\\Users\\dell\\Desktop\\akka-formation-repo\\formation-akka\\group1\\session4\\Akka.TeamsService\\Akka.TeamsService.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12849,11 +12850,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\dell\\source\\training\\Akka.TeamsService\\Akka.TeamsService.Domain\\Akka.TeamsService.Domain.csproj": {
-              "projectPath": "C:\\Users\\dell\\source\\training\\Akka.TeamsService\\Akka.TeamsService.Domain\\Akka.TeamsService.Domain.csproj"
+            "C:\\Users\\dell\\Desktop\\akka-formation-repo\\formation-akka\\group1\\session4\\Akka.TeamsService\\Akka.TeamsService.Domain\\Akka.TeamsService.Domain.csproj": {
+              "projectPath": "C:\\Users\\dell\\Desktop\\akka-formation-repo\\formation-akka\\group1\\session4\\Akka.TeamsService\\Akka.TeamsService.Domain\\Akka.TeamsService.Domain.csproj"
             },
-            "C:\\Users\\dell\\source\\training\\Akka.TeamsService\\Akka.TeamsService.Infrastructure\\Akka.TeamsService.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\dell\\source\\training\\Akka.TeamsService\\Akka.TeamsService.Infrastructure\\Akka.TeamsService.Infrastructure.csproj"
+            "C:\\Users\\dell\\Desktop\\akka-formation-repo\\formation-akka\\group1\\session4\\Akka.TeamsService\\Akka.TeamsService.Infrastructure\\Akka.TeamsService.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\dell\\Desktop\\akka-formation-repo\\formation-akka\\group1\\session4\\Akka.TeamsService\\Akka.TeamsService.Infrastructure\\Akka.TeamsService.Infrastructure.csproj"
             }
           }
         }
@@ -12872,6 +12873,10 @@
             "target": "Package",
             "version": "[2.1.1, )",
             "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.Mvc.Abstractions": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           },
           "Microsoft.AspNetCore.Razor.Design": {
             "suppressParent": "All",
