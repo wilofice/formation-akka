@@ -1,0 +1,11 @@
+C:\Users\dell\source\repos\AsyncAwaitExample\AsyncAwaitExample\bin\Debug\netcoreapp3.1\AsyncAwaitExample.exe
+C:\Users\dell\source\repos\AsyncAwaitExample\AsyncAwaitExample\bin\Debug\netcoreapp3.1\AsyncAwaitExample.deps.json
+C:\Users\dell\source\repos\AsyncAwaitExample\AsyncAwaitExample\bin\Debug\netcoreapp3.1\AsyncAwaitExample.runtimeconfig.json
+C:\Users\dell\source\repos\AsyncAwaitExample\AsyncAwaitExample\bin\Debug\netcoreapp3.1\AsyncAwaitExample.runtimeconfig.dev.json
+C:\Users\dell\source\repos\AsyncAwaitExample\AsyncAwaitExample\bin\Debug\netcoreapp3.1\AsyncAwaitExample.dll
+C:\Users\dell\source\repos\AsyncAwaitExample\AsyncAwaitExample\bin\Debug\netcoreapp3.1\AsyncAwaitExample.pdb
+C:\Users\dell\source\repos\AsyncAwaitExample\AsyncAwaitExample\obj\Debug\netcoreapp3.1\AsyncAwaitExample.csprojAssemblyReference.cache
+C:\Users\dell\source\repos\AsyncAwaitExample\AsyncAwaitExample\obj\Debug\netcoreapp3.1\AsyncAwaitExample.AssemblyInfoInputs.cache
+C:\Users\dell\source\repos\AsyncAwaitExample\AsyncAwaitExample\obj\Debug\netcoreapp3.1\AsyncAwaitExample.AssemblyInfo.cs
+C:\Users\dell\source\repos\AsyncAwaitExample\AsyncAwaitExample\obj\Debug\netcoreapp3.1\AsyncAwaitExample.dll
+C:\Users\dell\source\repos\AsyncAwaitExample\AsyncAwaitExample\obj\Debug\netcoreapp3.1\AsyncAwaitExample.pdb

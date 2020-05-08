@@ -1,0 +1,8 @@
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Domain\bin\Debug\netstandard2.0\Akka.TeamsService.Domain.deps.json
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Domain\bin\Debug\netstandard2.0\Akka.TeamsService.Domain.dll
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Domain\bin\Debug\netstandard2.0\Akka.TeamsService.Domain.pdb
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Domain\obj\Debug\netstandard2.0\Akka.TeamsService.Domain.csprojAssemblyReference.cache
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Domain\obj\Debug\netstandard2.0\Akka.TeamsService.Domain.AssemblyInfoInputs.cache
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Domain\obj\Debug\netstandard2.0\Akka.TeamsService.Domain.AssemblyInfo.cs
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Domain\obj\Debug\netstandard2.0\Akka.TeamsService.Domain.dll
+C:\Users\dell\source\training\Akka.TeamsService\Akka.TeamsService.Domain\obj\Debug\netstandard2.0\Akka.TeamsService.Domain.pdb
