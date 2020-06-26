@@ -18,6 +18,11 @@ namespace Akka.TeamsService.Domain.TeamsAggregate.Handlers
             throw new NotImplementedException();
         }
 
+        public bool AddMemberToTeam(Person member, Team team)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool CreateTeam(CreateTeamRequest createTeamRequest)
         {
             Person person = _personsRepository.GetPersonById(createTeamRequest.EmployeeId);

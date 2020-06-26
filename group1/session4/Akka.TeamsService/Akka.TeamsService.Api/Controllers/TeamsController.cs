@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Abstractions;
 using Akka.TeamsService.Domain.TeamsAggregate.Commands;
 using Akka.TeamsService.Domain.TeamsAggregate.Exceptions;
+using Microsoft.Extensions.Logging;
 
 namespace Akka.TeamsService.Api.Controllers
 {
@@ -17,10 +18,13 @@ namespace Akka.TeamsService.Api.Controllers
     public class TeamsController : Controller
     {
         private ITeamsReadRepository _teamsRepository;
+        private readonly ILogger<TeamsController> _logger;
+        private ITeamsHandler _handler;
 
-        public TeamsController(ITeamsReadRepository teamsReadRepository)
+        public TeamsController(ITeamsReadRepository teamsReadRepository, ILogger<TeamsController> logger)
         {
             _teamsRepository = teamsReadRepository;
+            _logger = logger;
         }
         
         [HttpGet]
@@ -40,23 +44,18 @@ namespace Akka.TeamsService.Api.Controllers
         [HttpPost]
         public ActionResult CreateTeam([FromBody] CreateTeamRequest createTeamRequest)
         {
-
-            
             try
             {
                 bool operationSuccess = _handler.CreateTeam(createTeamRequest);
 
+                return Created("", new { operationSuccess });
+
             }
             catch (BusinessException e)
             {
-                return BusinessException.ExceptionManagement[e].StatusCodeResult
+
+                return BusinessException.GetStatusCodeResult(e);
             }
-
-            NotFoundResult result = NotFound();
-
-            return NotFound();
-
         }
-
     }
 }

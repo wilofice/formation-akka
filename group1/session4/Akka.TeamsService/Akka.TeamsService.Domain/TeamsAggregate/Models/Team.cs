@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Akka.TeamsService.Domain.TeamsAggregate.Abstractions.Dtos;
 using Akka.TeamsService.Domain.TeamsAggregate.Exceptions;
 
 namespace Akka.TeamsService.Domain.TeamsAggregate.Models
@@ -33,39 +34,53 @@ namespace Akka.TeamsService.Domain.TeamsAggregate.Models
 
         public static Team CreateTeam(string id, string name, string description, IEnumerable<Person> members)
         {
+            if (string.IsNullOrEmpty(id))
+            {
+                throw new TeamCreationFailedException("message", new ArgumentNullException(nameof(id)));
+            }
+
             if (string.IsNullOrEmpty(name))
             {
                 throw new TeamCreationFailedException("message", new ArgumentNullException(nameof(name)));
-                throw new ArgumentNullException("name must be not null", nameof(name));
             }
 
-            if (string.IsNullOrEmpty(members))
+            if (name.Length < 20)
             {
-                throw new InvalidTeamInitialMembersException("description must be not null", nameof(name));
+                throw new TeamCreationFailedException("message", new ArgumentNullException(nameof(name)));
+            }
+
+            if (string.IsNullOrEmpty(description))
+            {
+                throw new TeamCreationFailedException("message", new ArgumentNullException(nameof(description)));
             }
 
             if (description.Length < 20)
             {
-                throw new ArgumentNullException("description must have at least 20 Carateres", nameof(name));
+                throw new TeamCreationFailedException("message", new ArgumentNullException(nameof(description)));
             }
 
             if (!(members?.Any() ?? false))
             {
-                throw new InvalidTeamInitialMembersException("teams must have at least one member");
+                throw new TeamCreationFailedException("message", new ArgumentException(nameof(members)));
             }
 
-            Team team = new Team(id, name, description);
+            Team team = new Team(id, name, description)
+            {
+                _members = members.ToList()
+            };
 
-            team._members = members.ToList();
-
-            foreach(var member in members)
+            foreach (Person member in members)
             {
                 member.AddTeam(team);
             }
 
             return team;
-
-
         }
+    
+        public  Team FromDto(ITeamDto teamDto)
+        {
+            return null;
+        }
+    
     }
 }
