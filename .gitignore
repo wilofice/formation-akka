@@ -234,3 +234,4 @@ _Pvt_Extensions
 .fake/
 
 **/obj
+/group1/session4/Akka.TeamsService/Akka.TeamsService.Database/Akka.TeamsService.Database.jfm
