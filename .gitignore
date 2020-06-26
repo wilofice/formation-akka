@@ -233,6 +233,5 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 
-
 /group1/session4/Akka.TeamsService/Akka.TeamsService.Database/Akka.TeamsService.Database.jfm
-**/obj
+**/obj/
