@@ -8,5 +8,6 @@ namespace Akka.TeamsService.Domain.TeamsAggregate.Abstractions
     public interface ITeamsReadRepository
     {
         IEnumerable<Team> GetAllTeams();
+        Team GetTeamById(string id);
     }
 }

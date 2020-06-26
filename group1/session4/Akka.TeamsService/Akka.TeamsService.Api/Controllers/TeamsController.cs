@@ -7,6 +7,8 @@ using Akka.TeamsService.Domain.TeamsAggregate.Models;
 using Akka.TeamsService.Infrastructure.TeamsAggregate.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Abstractions;
+using Akka.TeamsService.Domain.TeamsAggregate.Commands;
+using Akka.TeamsService.Domain.TeamsAggregate.Exceptions;
 
 namespace Akka.TeamsService.Api.Controllers
 {
@@ -27,10 +29,34 @@ namespace Akka.TeamsService.Api.Controllers
             return Ok(_teamsRepository.GetAllTeams());
         }
 
-        [HttpGet("hashcode")]
-        public IActionResult GetHashcode()
+        [HttpGet]
+        public ActionResult<Team> GetTeam(string id)
         {
-            return Ok(new { value = _teamsRepository.GetHashCode() });
+            return Ok();
         }
+
+
+
+        [HttpPost]
+        public ActionResult CreateTeam([FromBody] CreateTeamRequest createTeamRequest)
+        {
+
+            
+            try
+            {
+                bool operationSuccess = _handler.CreateTeam(createTeamRequest);
+
+            }
+            catch (BusinessException e)
+            {
+                return BusinessException.ExceptionManagement[e].StatusCodeResult
+            }
+
+            NotFoundResult result = NotFound();
+
+            return NotFound();
+
+        }
+
     }
 }
