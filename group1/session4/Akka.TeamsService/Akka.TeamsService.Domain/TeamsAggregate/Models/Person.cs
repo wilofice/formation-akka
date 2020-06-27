@@ -18,14 +18,8 @@ namespace Akka.TeamsService.Domain.TeamsAggregate.Models
 
         public Person AddTeam(Team team)
         {
-            if (team == null)
-            {
-                throw new ArgumentNullException(nameof(team));
-            }
-
-            _teams.Add(team);
-
-            return this;
+            
+            return;
         }
     }
 }

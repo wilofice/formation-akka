@@ -9,6 +9,6 @@ namespace Akka.TeamsService.Domain.TeamsAggregate.Commands
         public string Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public string EmployeeId { get; set; }
+        public string PersonId { get; set; }
     }
 }

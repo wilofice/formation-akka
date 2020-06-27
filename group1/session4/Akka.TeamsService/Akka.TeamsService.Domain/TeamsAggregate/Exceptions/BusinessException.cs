@@ -27,20 +27,22 @@ namespace Akka.TeamsService.Domain.TeamsAggregate.Exceptions
 
         private static Dictionary<Type, Type> ExceptionManagement = new Dictionary<Type, Type>
         {
-            { typeof(InvalidTeamInitialMembersException), typeof(NotFoundObjectResult) },
-            { typeof(InvalidTeamInitialMembersException), typeof(BadRequestObjectResult) },
-            { typeof(InvalidTeamInitialMembersException), typeof(ConflictObjectResult) },
+            { typeof(DuplicateTeamIdentifierException), typeof(ConflictObjectResult)},
+            { typeof(DuplicateTeamIdentifierException), new ConflictResult()},
+
         };
 
-        public static StatusCodeResult GetStatusCodeResult(BusinessException exception)
+        
+        public static ObjectResult GetStatusCodeResult(BusinessException businessException)
         {
-            Type type = ExceptionManagement[exception.GetType()];
 
-            var ctors = type.GetConstructors(BindingFlags.Public);
+            Type type = ExceptionManagement[businessException.GetType()];
 
-            StatusCodeResult obj = (StatusCodeResult) ctors[0].Invoke(new object[] { exception.Message });
+            var ctors = type.GetProperties(BindingFlags.Public | BindingFlags.NonPublic);
 
-            return obj;
+            var objResult = (ObjectResult)ctors[0].Invoke(new object[] { businessException.Message });
+
+            return objResult;
         }
 
     }

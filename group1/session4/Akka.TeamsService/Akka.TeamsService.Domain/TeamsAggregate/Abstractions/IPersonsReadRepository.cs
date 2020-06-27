@@ -7,6 +7,6 @@ namespace Akka.TeamsService.Domain.TeamsAggregate.Abstractions
 {
     public interface IPersonsReadRepository
     {
-        Person GetPersonById(string id);
+        IPersonDto GetPersonById(string id);
     }
 }

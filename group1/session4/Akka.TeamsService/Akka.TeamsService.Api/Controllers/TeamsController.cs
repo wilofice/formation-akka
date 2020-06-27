@@ -48,12 +48,12 @@ namespace Akka.TeamsService.Api.Controllers
             {
                 bool operationSuccess = _handler.CreateTeam(createTeamRequest);
 
-                return Created("", new { operationSuccess });
+                return Created("uri", new { operationSuccess });
 
             }
             catch (BusinessException e)
             {
-
+                _logger.LogError(e.Message);
                 return BusinessException.GetStatusCodeResult(e);
             }
         }

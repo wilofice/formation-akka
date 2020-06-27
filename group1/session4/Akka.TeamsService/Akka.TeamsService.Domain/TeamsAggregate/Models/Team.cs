@@ -36,7 +36,7 @@ namespace Akka.TeamsService.Domain.TeamsAggregate.Models
         {
             if (string.IsNullOrEmpty(id))
             {
-                throw new TeamCreationFailedException("message", new ArgumentNullException(nameof(id)));
+                throw new TeamCreationFailedException("id is null", new ArgumentNullException(nameof(id)));
             }
 
             if (string.IsNullOrEmpty(name))
@@ -46,7 +46,7 @@ namespace Akka.TeamsService.Domain.TeamsAggregate.Models
 
             if (name.Length < 20)
             {
-                throw new TeamCreationFailedException("message", new ArgumentNullException(nameof(name)));
+                throw new TeamCreationFailedException("name ", new ArgumentException(nameof(name)));
             }
 
             if (string.IsNullOrEmpty(description))
@@ -63,7 +63,6 @@ namespace Akka.TeamsService.Domain.TeamsAggregate.Models
             {
                 throw new TeamCreationFailedException("message", new ArgumentException(nameof(members)));
             }
-
             Team team = new Team(id, name, description)
             {
                 _members = members.ToList()
