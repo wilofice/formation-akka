@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Akka.TeamsService.Infrastructure.TeamsAggregate.Repositories
+namespace Akka.TeamsService.Infrastructure.TeamsRepositories.Repositories
 {
     public class TeamsRepository : ITeamsReadRepository
     {

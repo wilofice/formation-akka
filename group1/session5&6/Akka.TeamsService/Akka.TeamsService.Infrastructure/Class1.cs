@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Akka.TeamsService.Domain
+namespace Akka.TeamsService.Infrastructure
 {
     public class Class1
     {
