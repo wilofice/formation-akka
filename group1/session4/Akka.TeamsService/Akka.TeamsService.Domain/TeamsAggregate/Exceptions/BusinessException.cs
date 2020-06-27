@@ -28,17 +28,14 @@ namespace Akka.TeamsService.Domain.TeamsAggregate.Exceptions
         private static Dictionary<Type, Type> ExceptionManagement = new Dictionary<Type, Type>
         {
             { typeof(DuplicateTeamIdentifierException), typeof(ConflictObjectResult)},
-            { typeof(DuplicateTeamIdentifierException), new ConflictResult()},
-
         };
 
         
         public static ObjectResult GetStatusCodeResult(BusinessException businessException)
         {
-
             Type type = ExceptionManagement[businessException.GetType()];
 
-            var ctors = type.GetProperties(BindingFlags.Public | BindingFlags.NonPublic);
+            ConstructorInfo[] ctors = type.GetConstructors(BindingFlags.Public);
 
             var objResult = (ObjectResult)ctors[0].Invoke(new object[] { businessException.Message });
 
